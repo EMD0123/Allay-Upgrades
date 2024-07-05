@@ -8,5 +8,5 @@ data remove entity @s Item.components."minecraft:item_name"
 data remove entity @s Item.components."minecraft:custom_name"
 data modify entity @s Item.id set value "minecraft:book"
 data remove entity @s Item.components."minecraft:custom_data"
-tag @s add allayfix.used
+tag @s add allay_upgrades.used
 execute as @e[tag=allaybook.unbooked] run tag @s remove allaybook.unbooked
