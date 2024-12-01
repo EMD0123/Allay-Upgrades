@@ -9,6 +9,7 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:stone",components:{"m
 data modify entity @s Item.id set value "minecraft:enchanted_book"
 data modify entity @s Item.components."minecraft:item_name" set value '{"text":"Allay Book","color":"aqua"}'
 data remove entity @s Item.components."minecraft:custom_data".entitydata.Pos
+data modify entity @s Item.components."minecraft:max_stack_size" set value 64
 data remove entity @s Item.components."minecraft:custom_data".entitydata.HandItems[0]
 data remove entity @s Item.components."minecraft:custom_data".entitydata.Inventory[0]
 data remove entity @s Item.components."minecraft:custom_data".entitydata.Brain.memories."minecraft:liked_player"
