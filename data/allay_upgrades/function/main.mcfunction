@@ -19,6 +19,6 @@ execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=mine
 execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay,nbt={OnGround:1b}] at @s unless data entity @s HandItems[0].id if predicate allay_upgrades:amethyst_pad run tp @s ~ ~ ~
 
 #book
-execute if score allaybook allay_upgrades.gamerules matches 1 as @e[type=item,nbt={Item:{id:"minecraft:book",count:1}},tag=!allay_upgrades.used] at @s at @n[type=minecraft:allay,distance=0..1] run function allay_upgrades:allaybook/book
+execute if score allaybook allay_upgrades.gamerules matches 1 if entity @e[type=item,nbt={Item:{id:"minecraft:book",count:1}},tag=!allay_upgrades.used] as @e[type=minecraft:allay] at @s if entity @n[type=item,nbt={Item:{id:"minecraft:book",count:1}},tag=!allay_upgrades.used,distance=0..1] run function allay_upgrades:allaybook/book
 #unbook
 execute unless score allaybook allay_upgrades.gamerules matches 0 as @e[type=item,nbt={OnGround:1b,Item:{components:{"minecraft:custom_data":{allaybook:1b}}}},tag=!allay_upgrades.used] at @s run function allay_upgrades:allaybook/unbook
