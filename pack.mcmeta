@@ -1,9 +1,9 @@
 {
   "pack": {
-    "pack_format": 48,
+    "pack_format": 49,
     "supported_formats": {
-      "min_inclusive": 45,
-      "max_inclusive": 48
+      "min_inclusive": 49,
+      "max_inclusive": 61
     },
     "description": "By \u00A7aEMD"
   }

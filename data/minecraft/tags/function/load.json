@@ -1,5 +1,8 @@
 {
  "values": [
- "allay_upgrades:load"
+  {
+   "id": "allay_upgrades:load",
+   "required": false
+  }
  ]
 }

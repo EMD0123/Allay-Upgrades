@@ -12,10 +12,10 @@ execute if score amethyst_note_blocks allay_upgrades.gamerules matches 1 as @e[t
 execute if score auto_dismount allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay] at @s if data entity @s HandItems[0].id if predicate allay_upgrades:is_passenger run ride @s dismount
 
 # amethyst pad
-execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay] at @s run attribute @s minecraft:generic.flying_speed modifier remove allay_upgrades:amethyst_pad
+execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay] at @s run attribute @s minecraft:flying_speed modifier remove allay_upgrades:amethyst_pad
 execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay] at @s unless data entity @s HandItems[0].id if predicate allay_upgrades:amethyst_pad run particle dust{color:[0.694,0.518,1.000],scale:1} ~ ~.3 ~ 0.15 0.15 0.15 1 1 normal
 execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay] at @s unless data entity @s HandItems[0].id if predicate allay_upgrades:amethyst_pad run data modify entity @s Motion set value 0
-execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay] at @s unless data entity @s HandItems[0].id if predicate allay_upgrades:amethyst_pad run attribute @s minecraft:generic.flying_speed modifier add allay_upgrades:amethyst_pad -1 add_multiplied_total
+execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay] at @s unless data entity @s HandItems[0].id if predicate allay_upgrades:amethyst_pad run attribute @s minecraft:flying_speed modifier add allay_upgrades:amethyst_pad -1 add_multiplied_total
 execute if score amethyst_pad allay_upgrades.gamerules matches 1 as @e[type=minecraft:allay,nbt={OnGround:1b}] at @s unless data entity @s HandItems[0].id if predicate allay_upgrades:amethyst_pad run tp @s ~ ~ ~
 
 #book
