@@ -9,7 +9,7 @@ data modify entity @n[type=minecraft:item,nbt={Item:{id:"minecraft:stone",compon
 execute if data entity @s Inventory[0] run summon item ~ ~ ~ {Item:{id:"minecraft:stone",count:1,components:{"minecraft:custom_data":{allay_upgrades.item:1}}}}
 data modify entity @n[type=minecraft:item,nbt={Item:{id:"minecraft:stone",components:{"minecraft:custom_data":{allay_upgrades.item:1}}}}] Item set from entity @s Inventory[0]
 data modify entity @n[tag=allay_upgrades.selected] Item.id set value "minecraft:enchanted_book"
-data modify entity @n[tag=allay_upgrades.selected] Item.components."minecraft:item_name" set value '{"text":"Allay Book","color":"aqua"}'
+data modify entity @n[tag=allay_upgrades.selected] Item.components."minecraft:item_name" set value {"text":"Allay Book","color":"aqua"}
 data remove entity @n[tag=allay_upgrades.selected] Item.components."minecraft:custom_data".entitydata.Pos
 data modify entity @n[tag=allay_upgrades.selected] Item.components."minecraft:max_stack_size" set value 64
 data remove entity @n[tag=allay_upgrades.selected] Item.components."minecraft:custom_data".entitydata.HandItems[0]
