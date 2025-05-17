@@ -1,2 +1,3 @@
 schedule function allay_upgrades:slowtick 1s
+schedule function allay_upgrades:slowtick_10s 10s
 scoreboard objectives add allay_upgrades.gamerules dummy

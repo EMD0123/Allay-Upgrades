@@ -1,0 +1,1 @@
+$execute if entity @a[nbt={UUID:$(value)},distance=64..] run tag @s add allay_upgrades.teleport
